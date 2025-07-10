@@ -35,7 +35,7 @@ A professional and responsive static website for "Prime Traders," a leading FMCG
 
 You can explore the live version of this project here:
 
-[**Live Demo - Prime Traders Website**](YOUR_GITHUB_PAGES_URL_HERE)
+[**Live Demo - Prime Traders Website**](https://bagaria-codes.github.io/fmcg-distributor-website/)
 
 ## 🎥 Video Walkthrough
 
@@ -52,18 +52,9 @@ To view and run this project locally on your machine:
     ```bash
     git clone [https://github.com/bagaria-codes/fmcg-distributor-website](https://github.com/bagaria-codes/fmcg-distributor-website)
     ```
-    *(Replace `YOUR_USERNAME` with your GitHub username.)*
 2.  **Navigate to the project directory:**
     ```bash
     cd fmcg-distributor-website
     ```
 3.  **Open `index.html`** in your preferred web browser. All other pages are linked from there.
-
-## ✉️ Contact Information
-
-For any business inquiries or questions related to Prime Traders:
-
-* **Email:** info@primetraders.com
-* **Phone:** +91 98765 43210
-* **Address:** 123, Prime Tower, Bandra Kurla Complex, Mumbai, India.
 
