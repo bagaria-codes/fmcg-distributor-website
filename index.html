@@ -17,34 +17,33 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Ensures header background is white on load and adheres to design */
         .header-main {
-            background-color: var(--navbar-bg); /* Applies the variable from style.css */
+            background-color: var(--navbar-bg); 
         }
-        /* Adjust padding for hero section to ensure content is not hidden behind fixed header */
+       
         .hero-section {
-            padding-top: calc(80px + 1rem); /* Base padding + approximate navbar height */
+            padding-top: calc(80px + 1rem); 
         }
         @media (max-width: 575.98px) {
             .hero-section {
-                padding-top: calc(60px + 1rem); /* Adjusted for smaller navbar height on mobile */
+                padding-top: calc(60px + 1rem); 
             }
         }
-        /* Footer brand logo in the image is simple text, not an image placeholder */
+     
         .footer-main .brand-logo-text {
             font-family: 'Oswald', sans-serif;
             font-weight: 700;
             font-size: 1.8rem;
-            color: var(--neutral-white); /* Ensure white for footer brand */
+            color: var(--neutral-white); 
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            display: block; /* Make it a block element to properly apply margin-bottom */
+            display: block; 
             margin-bottom: 15px;
         }
 
-        /* Specific styles to ensure partner logos align with the provided image's grayscale look */
+        
         .partner-logo-grid img {
-            filter: grayscale(100%);
+            filter: grayscale(0%);
             opacity: 0.7;
         }
         .partner-logo-grid img:hover {
@@ -52,10 +51,10 @@
             opacity: 1;
         }
 
-        /* Carousel caption visibility on smaller screens */
+
         @media (max-width: 767.98px) {
             .carousel-caption {
-                display: none !important; /* Hide captions on small screens */
+                display: none !important; 
             }
         }
 
