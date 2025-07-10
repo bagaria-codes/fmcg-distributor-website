@@ -54,14 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault(); // Prevent form submission if validation fails
             event.stopPropagation(); // Stop propagation for Bootstrap's validation display
         } else {
-            // If validation passes, you would typically send the form data
-            // to a server using AJAX (e.g., fetch API) here.
-            // For this example, we'll just show an alert.
 
-            event.preventDefault(); // Prevent actual submission for demo
+            event.preventDefault();
             alert('Form submitted successfully!\n(In a real application, this data would be sent to a server.)');
             contactForm.reset(); // Clear the form after successful submission
-            // Optional: Hide invalid feedback if successful
             formControls.forEach(control => {
                 control.classList.remove('is-invalid');
             });
@@ -73,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener('input', function() {
             if (this.checkValidity()) {
                 this.classList.remove('is-invalid');
-                this.classList.add('is-valid'); // Optional: Add is-valid for green border
+                this.classList.add('is-valid'); 
             } else {
                 this.classList.remove('is-valid');
                 this.classList.add('is-invalid');
