@@ -28,41 +28,6 @@ A professional and responsive static website for "Prime Traders," a leading FMCG
 * **Google Maps API:** Integrated on the contact page to display the company's location.
 
 ## 📁 Project Structure
-
-Sure, here is the full README.md for your project, incorporating all the details discussed and using the recommended repository name prime-traders-fmcg-website.
-
-Markdown
-
-# Prime Traders - FMCG Wholesale Distributor Website
-
-A professional and responsive static website for "Prime Traders," a leading FMCG wholesale distributor based in India. This project serves as a comprehensive online presence, showcasing their services, product catalog, brand partnerships, and providing essential contact information.
-
-## 🚀 Features
-
-* **Responsive Design:** Optimized for various devices (desktops, tablets, mobile) ensuring a seamless user experience, powered by Bootstrap 5.
-* **Intuitive Navigation:** Easy-to-use header navigation with a sticky effect for constant accessibility, and a comprehensive footer.
-* **Homepage (`index.html`):** Engaging hero section, overview of core services, and clear calls-to-action to explore more.
-* **About Us Page (`about.html`):** Details the company's inspiring story, mission, vision, and core values, establishing trust and credibility.
-* **Products Page (`products.html`):** Displays a categorized list of FMCG products with client-side search, category filtering, price range filtering, and pagination capabilities for easy Browse.
-* **Partners Page (`partners.html`):** Showcases key brand partners and features client testimonials, highlighting successful collaborations.
-* **Contact Us Page (`contact.html`):** Provides an interactive contact form with client-side validation, integrated Google Maps for location, and essential contact details.
-* **Client-Side JavaScript:** Enhances interactivity on the Products and Contact pages without requiring a backend.
-* **Font Awesome Icons:** Utilized for modern and clear visual elements across the site.
-
-## 🛠️ Technologies Used
-
-* **HTML5:** Core structure and content of all web pages.
-* **CSS3:** Custom styling (`style.css`) for a unique and professional aesthetic.
-* **Bootstrap 5.3.3:** Frontend framework used for responsive grid system, components (navbar, cards, forms, etc.), and overall responsiveness.
-* **JavaScript (Vanilla JS):**
-    * `script.js`: Manages global functionalities like the sticky navigation bar and general page setup.
-    * `products.js`: Implements the dynamic product filtering, search, and pagination logic on the `products.html` page.
-    * `contact.js`: Handles client-side form validation for the contact form on `contact.html`.
-* **Font Awesome 6.5.2:** For scalable vector icons.
-* **Google Fonts:** `Oswald` (for headings) and `Roboto` (for body text) for modern typography.
-* **Google Maps API:** Integrated on the contact page to display the company's location.
-
-## 📁 Project Structure
 .
 ├── about.html
 ├── contact.html
