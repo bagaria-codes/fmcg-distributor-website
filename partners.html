@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners & Clients - Prime Traders</title>
+    <meta name="description" content="Discover the brands and clients Prime Traders partners with for efficient FMCG distribution across India.">
+
+    <link rel="icon" href="https://via.placeholder.com/32x32?text=PT" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Adjust the margin-top for the page header to account for the fixed navbar */
+        .page-header-section {
+            margin-top: 72px; /* Standard navbar height on larger screens */
+        }
+        @media (max-width: 575.98px) {
+            .page-header-section {
+                margin-top: 56px; /* Adjusted for smaller fixed navbar height on mobile */
+            }
+        }
+
+        /* Styles for partner logo cards */
+        .partner-logo-card {
+            background-color: var(--neutral-white);
+            border: 1px solid var(--neutral-light-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px; /* Fixed height for consistent logo display */
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .partner-logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .partner-logo-card img {
+            max-width: 90%;
+            max-height: 80px; /* Adjust based on typical logo sizes */
+            object-fit: contain; /* Ensures entire logo is visible */
+            filter: grayscale(80%); /* Optional: Make logos grayscale */
+            opacity: 0.7;
+            transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .partner-logo-card:hover img {
+            filter: grayscale(0%); /* Optional: Color on hover */
+            opacity: 1;
+        }
+
+        /* Call to Action specific styling if not covered by global styles */
+        .call-to-action-partners {
+            background-color: var(--primary-color-lightest);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+        .call-to-action-partners h2 {
+            color: var(--primary-color-dark);
+            margin-bottom: 1rem;
+        }
+        .call-to-action-partners p {
+            color: var(--neutral-dark-charcoal);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-main fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand brand-logo" href="index.html">Prime Traders</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="partners.html">Partners/Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header-section">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Our Valued Partners & Clients</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Building strong relationships for mutual growth and success.</p>
+        </div>
+    </section>
+
+    <section class="partners-content-section section-padding bg-light-gray">
+        <div class="container">
+            <div class="row text-center mb-5 animate__animated animate__fadeInUp">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2 class="section-title">Who We Work With</h2>
+                    <p class="lead">At Prime Traders, we believe in fostering strong, long-lasting partnerships. We are proud to collaborate with some of the most reputable brands and serve a diverse range of clients across India. Our success is built on their trust and our shared commitment to excellence in FMCG distribution.</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+                <div class="col animate__animated animate__zoomIn animate__delay-0-1s">
+                    <div class="partner-logo-card">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/09/Nestle-Logo-2015-present.jpg" alt="Nestle Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-2s">
+                    <div class="partner-logo-card">
+                        <img src="https://download.logo.wine/logo/Unilever/Unilever-Logo.wine.png" alt="Unilever Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-3s">
+                    <div class="partner-logo-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdHSvenohVLcjxfnTZ9WIVKnrv_zsJ55H7mX9qVUfxVFEzEINTQO2-8fVzFMazqBgP3cs&usqp=CAU" alt="Coca Cola Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-4s">
+                    <div class="partner-logo-card">
+                        <img src="https://interbrand.com/wp-content/uploads/2023/05/Britannia_images_Hero_600x400.jpg" alt="Britannia Mart Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-5s">
+                    <div class="partner-logo-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Parle_Products_logo.svg/1200px-Parle_Products_logo.svg.png" alt="Parle Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-6s">
+                    <div class="partner-logo-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Amul_official_logo.svg" alt="Amul Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-7s">
+                    <div class="partner-logo-card">
+                        <img src="https://www.logo.wine/a/logo/Dabur/Dabur-Logo.wine.svg" alt="Dabur Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-8s">
+                    <div class="partner-logo-card">
+                        <img src="https://www.opentext.com/assets/images/resources/customer-success/itc-foods-logo-416x274.jpg" alt="ITC Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-0-9s">
+                    <div class="partner-logo-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png" alt="Godrej Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-1-0s">
+                    <div class="partner-logo-card">
+                        <img src="https://infowordpress.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/08/03110213/Marico.png" alt="Marico Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-1-1s">
+                    <div class="partner-logo-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg" alt="Tata Logo">
+                    </div>
+                </div>
+                <div class="col animate__animated animate__zoomIn animate__delay-1-2s">
+                    <div class="partner-logo-card">
+                        <img src="https://images.seeklogo.com/logo-png/19/2/procter-and-gamble-pg-logo-png_seeklogo-199753.png" alt="P&G Logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-5 call-to-action-partners animate__animated animate__fadeInUp animate__delay-1-5s">
+                <div class="col-12">
+                    <h2 class="section-title">Become Our Partner</h2>
+                    <p class="lead">Are you a brand looking to expand your reach, or a retailer seeking reliable supply? Let's connect and explore how we can grow together.</p>
+                    <a href="contact.html" class="btn btn-primary-custom btn-lg">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <span class="brand-logo-text">Prime Traders</span>
+                    <p class="mt-3">Your reliable partner for wholesale FMCG distribution across India. Efficiency, Trust, Growth.</p>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h5 class="text-white mb-3">Legal</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="https://linkedin.com/primetraders" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://facebook.com/primetraders" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/primetraders" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <p class="copyright-text">&copy; 2025 Prime Traders. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

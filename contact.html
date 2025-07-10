@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Prime Traders</title>
+    <meta name="description" content="Contact Prime Traders for wholesale FMCG inquiries, partnerships, or general questions. Find our address, phone, email, and location on the map.">
+
+    <link rel="icon" href="https://via.placeholder.com/32x32?text=PT" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Adjust the margin-top for the page header to account for the fixed navbar */
+        .page-header-section {
+            margin-top: 72px; /* Standard navbar height on larger screens */
+        }
+        @media (max-width: 575.98px) {
+            .page-header-section {
+                margin-top: 56px; /* Adjusted for smaller fixed navbar height on mobile */
+            }
+        }
+
+        /* Styling for the contact information card */
+        .contact-info-card p {
+            margin-bottom: 0.75rem;
+            color: var(--neutral-dark-charcoal);
+            font-size: 1rem;
+        }
+
+        .contact-info-card p i {
+            color: var(--primary-color);
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+
+        .contact-info-card p a {
+            color: var(--neutral-dark-charcoal);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info-card p a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-info-card .social-icons a {
+            color: var(--neutral-dark-charcoal);
+            font-size: 1.8rem;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info-card .social-icons a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Styling for the map container */
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden; /* Ensures iframe corners are rounded */
+            box-shadow: var(--shadow-small); /* Add shadow for better appearance */
+        }
+        .map-container iframe {
+            display: block; /* Removes extra space below iframe, crucial for alignment */
+            width: 100%; /* Make sure it takes full width of its container */
+            height: 350px; /* Fixed height for consistency */
+            border: 0; /* Remove default iframe border */
+        }
+
+        /* General form input styling if not fully covered by Bootstrap or style.css */
+        .form-control:focus, .form-select:focus, .form-control.is-invalid:focus, .form-select.is-invalid:focus {
+            box-shadow: 0 0 0 0.25rem rgba(var(--primary-rgb), 0.25);
+            border-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-main fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand brand-logo" href="index.html">Prime Traders</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partners.html">Partners/Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header-section">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Get in Touch</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">We're here to help you. Reach out to Prime Traders for any inquiries.</p>
+        </div>
+    </section>
+
+    <section class="contact-content-section section-padding bg-light-gray">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-7 mb-4 mb-lg-0 animate__animated animate__fadeInLeft">
+                    <div class="contact-form-card custom-card p-4 shadow-sm">
+                        <h2 class="section-title mb-4">Send Us a Message</h2>
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="fullName" name="fullName" required placeholder="Enter your full name">
+                                <div class="invalid-feedback">Please enter your full name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com">
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="e.g., +91 9876543210">
+                                <div class="invalid-feedback">Please enter a valid phone number.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="subject" name="subject" required placeholder="e.g., Partnership Inquiry">
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom btn-lg w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 animate__animated animate__fadeInRight">
+                    <div class="contact-info-card custom-card p-4 shadow-sm mb-4">
+                        <h3 class="section-title mb-3">Our Details</h3>
+                        <br><br>
+                        <p><i class="fas fa-map-marker-alt text-primary-custom me-2"></i> Address: Prime Traders, Plot No. 123, ABC Industrial Estate, Mumbai, Maharashtra - 400045, India</p>
+                        <p><i class="fas fa-phone-alt text-primary-custom me-2"></i> Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+                        <p><i class="fas fa-envelope text-primary-custom me-2"></i> Email: <a href="mailto:info@primetraders.com">info@primetraders.com</a></p>
+                        <p><i class="fas fa-clock text-primary-custom me-2"></i> Business Hours: Mon - Sat: 9:00 AM - 6:00 PM (IST)</p>
+                        <div class="social-icons mt-4">
+                            <h4 class="mb-2">Follow Us:</h4>
+                            <a href="https://linkedin.com/company/primetraders" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://facebook.com/primetraders" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/primetraders" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                        </div>
+                        <br><br>
+                        <div class="map-container custom-card overflow-hidden shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9939292945855!2d72.8345469746659!3d19.107922250970656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888ae67fd%3A0xe0b9538d623ac5d2!2sMukesh%20Patel%20School%20of%20Technology%20Management%20%26%20Engineering%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1751012618065!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <span class="brand-logo-text">Prime Traders</span>
+                    <p class="mt-3">Your reliable partner for wholesale FMCG distribution across India. Efficiency, Trust, Growth.</p>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h5 class="text-white mb-3">Legal</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="https://linkedin.com/company/primetraders" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://facebook.com/primetraders" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/primetraders" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <p class="copyright-text">© 2025 Prime Traders. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
