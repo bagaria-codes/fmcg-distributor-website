@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Adjust the margin-top for the page header to account for the fixed navbar */
         .page-header-section {
-            margin-top: 72px; /* Standard navbar height on larger screens */
+            margin-top: 72px;
         }
         @media (max-width: 575.98px) {
             .page-header-section {
-                margin-top: 56px; /* Adjusted for smaller fixed navbar height on mobile */
+                margin-top: 56px; 
             }
         }
 
@@ -62,17 +61,16 @@
         /* Styling for the map container */
         .map-container {
             border-radius: 8px;
-            overflow: hidden; /* Ensures iframe corners are rounded */
-            box-shadow: var(--shadow-small); /* Add shadow for better appearance */
+            overflow: hidden;
+            box-shadow: var(--shadow-small); 
         }
         .map-container iframe {
-            display: block; /* Removes extra space below iframe, crucial for alignment */
-            width: 100%; /* Make sure it takes full width of its container */
-            height: 350px; /* Fixed height for consistency */
-            border: 0; /* Remove default iframe border */
+            display: block;
+            width: 100%; 
+            height: 350px; 
+            border: 0; 
         }
 
-        /* General form input styling if not fully covered by Bootstrap or style.css */
         .form-control:focus, .form-select:focus, .form-control.is-invalid:focus, .form-select.is-invalid:focus {
             box-shadow: 0 0 0 0.25rem rgba(var(--primary-rgb), 0.25);
             border-color: var(--primary-color);
