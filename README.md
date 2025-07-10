@@ -28,17 +28,8 @@ A professional and responsive static website for "Prime Traders," a leading FMCG
 * **Google Maps API:** Integrated on the contact page to display the company's location.
 
 ## 📁 Project Structure
-.
-├── about.html
-├── contact.html
-├── contact.js
-├── index.html
-├── partners.html
-├── products.html
-├── products.js
-├── script.js
-├── style.css
-└── README.md
+<img width="242" height="379" alt="image" src="https://github.com/user-attachments/assets/701a179f-3bcb-4358-9999-31c13ffd5779" />
+
 
 ## 🌐 Live Demo
 
